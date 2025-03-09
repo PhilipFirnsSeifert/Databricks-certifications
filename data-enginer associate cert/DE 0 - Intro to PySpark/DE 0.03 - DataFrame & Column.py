@@ -133,7 +133,7 @@ display(devices_df)
 from pyspark.sql.functions import col
 
 locations_df = events_df.select(
-    "user_id", 
+    col("user_id"), 
     col("geo.city").alias("city"), 
     col("geo.state").alias("state")
 )
