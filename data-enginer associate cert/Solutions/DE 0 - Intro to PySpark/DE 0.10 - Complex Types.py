@@ -72,6 +72,10 @@ from pyspark.sql.functions import split
 
 # COMMAND ----------
 
+display(df)
+
+# COMMAND ----------
+
 display(df.select(split(df.email, '@', 0).alias('email_handle')))
 
 # COMMAND ----------
